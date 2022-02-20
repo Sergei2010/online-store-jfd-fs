@@ -1,10 +1,10 @@
 const express = require('express')
-const Profession = require('../models/Profession')
+const Device = require('../models/Device')
 const router = express.Router({ mergeParams: true })
 
 router.get('/', async (req, res) => {
 	try {
-		const list = await Profession.find()
+		const list = await Device.find()
 		res.status(200).send(list)
 	} catch (e) {
 		res.status(500).json({

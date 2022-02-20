@@ -1,24 +1,33 @@
-// 1. у любого пользователя будет как минимум в БД qualities & professions
+// 1. у любого пользователя будет как минимум в БД devices & brands & types
 // 2. они равны mock данным
 
 // подключаем модели
-const Profession = require('../models/Profession')
-const Quality = require('../models/Quality')
+const Brand = require('../models/Brand')
+const Type = require('../models/Type')
+const Device = require('../models/Device')
 
-const professionMock = require('../mock/profession.json')
-const qualitiesMock = require('../mock/qualities.json')
+const deviceMock = require('../mock/devices.json')
+const typeMock = require('../mock/types.json')
+const brandMock = require('../mock/brands.json')
 
 module.exports = async () => {
-	const professions = await Profession.find()
-	if (professions.length !== professionMock.length) {
-		await createInitialEntity(Profession, professionMock)
+	const types = await Type.find()
+	if (types.length !== typeMock.length) {
+		await createInitialEntity(Type, typeMock)
 	}
 }
 
 module.exports = async () => {
-	const qualities = await Quality.find()
-	if (qualities.length !== qualitiesMock.length) {
-		await createInitialEntity(Quality, qualitiesMock)
+	const brands = await Brand.find()
+	if (brands.length !== brandMock.length) {
+		await createInitialEntity(Brand, brandMock)
+	}
+}
+
+module.exports = async () => {
+	const devices = await Device.find()
+	if (devices.length !== deviceMock.length) {
+		await createInitialEntity(Device, deviceMock)
 	}
 }
 
