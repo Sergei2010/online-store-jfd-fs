@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'PTSans-Regular';
+	src: url('../../fonts/PT_Sans/PTSans-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'PTSans-Italic';
+	src: url('../../fonts/PT_Sans/PTSans-Italic.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'PTSans-Bold';
+	src: url('../../fonts/PT_Sans/PTSans-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'PTSans-BoldItalic';
+	src: url('../../fonts/PT_Sans/PTSans-BoldItalic.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+.basket {
+	font-family: 'PTSans-Regular', serif;
+	color: #8b4513;
+	text-align: right;
+	margin-right: 1em;
+}
+.basket-card {
+	background: #fff5ee;
+	text-indent: 5em;
+}
+.basket-card span {
+	font-family: 'PTSans-Bold';
+}
+.basket-card h3 {
+	text-indent: 1em;
+}
+.basket-card h5 {
+	text-indent: 2em;
+}
