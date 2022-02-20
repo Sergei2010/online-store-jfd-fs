@@ -11,15 +11,10 @@ const app = express()
 // два базовых middleware
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+
 app.use('/api', routes)
 
 const PORT = config.get('port') ?? 8080
-
-/* if (process.env.NODE_ENV === 'production') {
-	console.log('Production')
-} else {
-	console.log('Development')
-} */
 
 // for MandoDB Atlas: user -> Sergey, password -> Izekzq_2022
 

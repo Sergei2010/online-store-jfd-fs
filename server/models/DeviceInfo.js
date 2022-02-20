@@ -2,11 +2,16 @@ const { Schema, model } = require('mongoose')
 
 const schema = new Schema(
 	{
-		name: {
+		deviceId: {
+			type: Schema.Types.ObjectId,
+			ref: 'Device',
+			required: true
+		},
+		title: {
 			type: String,
 			required: true
 		},
-		color: {
+		description: {
 			type: String,
 			required: true
 		}
@@ -16,4 +21,4 @@ const schema = new Schema(
 	}
 )
 
-module.exports = model('Quality', schema)
+module.exports = model('DeviceInfo', schema)

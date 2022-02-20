@@ -2,23 +2,11 @@ const { Schema, model } = require('mongoose')
 
 const schema = new Schema(
 	{
-		name: { type: String },
+		name: String,
 		email: { type: String, required: true, unique: true },
-		password: { type: String },
-		completeMeetings: { type: Number },
-		image: { type: String },
-		profession: {
-			type: Schema.Types.ObjectId,
-			ref: 'Profession'
-		},
-		qualities: [
-			{
-				type: Schema.Types.ObjectId,
-				ref: 'Quality'
-			}
-		],
-		rate: { type: Number },
-		sex: { type: String, enum: ['male', 'female', 'other'] }
+		password: String,
+		image: String,
+		role: String
 	},
 	{
 		timestamps: true

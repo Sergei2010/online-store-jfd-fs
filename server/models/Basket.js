@@ -2,8 +2,9 @@ const { Schema, model } = require('mongoose')
 
 const schema = new Schema(
 	{
-		name: {
-			type: String,
+		userId: {
+			type: Schema.Types.ObjectId,
+			ref: 'User',
 			required: true
 		}
 	},
@@ -12,4 +13,4 @@ const schema = new Schema(
 	}
 )
 
-module.exports = model('Profession', schema)
+module.exports = model('Basket', schema)
