@@ -1,0 +1,75 @@
+@font-face {
+	font-family: 'Aleo-BoldOTF';
+	src: url('./fonts/AleoOTF/Aleo-Bold.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-BoldItalicOTF';
+	src: url('./fonts/AleoOTF/Aleo-BoldItalic.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-ItalicOTF';
+	src: url('./fonts/AleoOTF/Aleo-Italic.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-LightOTF';
+	src: url('./fonts/AleoOTF/Aleo-Light.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-LightItalicOTF';
+	src: url('./fonts/AleoOTF/Aleo-LightItalic.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-RegularOTF';
+	src: url('./fonts/AleoOTF/Aleo-Regular.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-BoldTTF';
+	src: url('./fonts/AleoTTF/Aleo-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-BoldItalicTTF';
+	src: url('./fonts/AleoTTF/Aleo-BoldItalic.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-ItalicTTF';
+	src: url('./fonts/AleoTTF/Aleo-Italic.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-LightTTF';
+	src: url('./fonts/AleoTTF/Aleo-Light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-LightItalicTTF';
+	src: url('./fonts/AleoTTF/Aleo-LightItalic.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Aleo-RegularTTF';
+	src: url('./fonts/AleoTTF/Aleo-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+.title {
+	color: red;
+}
