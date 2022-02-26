@@ -2,6 +2,7 @@ const express = require('express')
 const Device = require('../models/Device')
 const router = express.Router({ mergeParams: true })
 
+// получить список Device
 router.get('/', async (req, res) => {
 	try {
 		const list = await Device.find()
@@ -12,5 +13,11 @@ router.get('/', async (req, res) => {
 		})
 	}
 })
+
+// добавить девайс в список
+
+// удалить девайс из списка
+
+// получить один девайс по  deviceId
 
 module.exports = router

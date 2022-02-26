@@ -2,6 +2,7 @@ const express = require('express')
 const Brand = require('../models/Brand')
 const router = express.Router({ mergeParams: true })
 
+// получить список Brand
 router.get('/', async (req, res) => {
 	try {
 		const list = await Brand.find()
@@ -12,5 +13,7 @@ router.get('/', async (req, res) => {
 		})
 	}
 })
+
+// добавить новый брэнд в список
 
 module.exports = router

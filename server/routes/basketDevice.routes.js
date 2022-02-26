@@ -1,11 +1,11 @@
 const express = require('express')
-const Basket = require('../models/Basket')
+const BasketDevice = require('../models/BasketDevice')
 const router = express.Router({ mergeParams: true })
 
-// получить список корзин
+// получить список BasketDevice
 router.get('/', async (req, res) => {
 	try {
-		const list = await Basket.find()
+		const list = await BasketDevice.find()
 		res.status(200).send(list)
 	} catch (e) {
 		res.status(500).json({
@@ -14,10 +14,10 @@ router.get('/', async (req, res) => {
 	}
 })
 
-// создаю Basket
+// создаю BasketDevice
 
-// удаляю device из Basket
+// удаляю BasketDevice по id
 
-// ищу Basket по ключу id
+// ищу BasketDevice по  id
 
 module.exports = router

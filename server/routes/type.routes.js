@@ -2,6 +2,7 @@ const express = require('express')
 const Type = require('../models/Type')
 const router = express.Router({ mergeParams: true })
 
+// получение списка Type
 router.get('/', async (req, res) => {
 	try {
 		const list = await Type.find()
@@ -12,5 +13,7 @@ router.get('/', async (req, res) => {
 		})
 	}
 })
+
+// добавление нового типа в список
 
 module.exports = router

@@ -25,7 +25,13 @@ const schema = new Schema(
 		brandId: {
 			type: Schema.Types.ObjectId,
 			ref: 'Brand'
-		}
+		},
+		deviceInfo: [
+			{
+				type: Schema.Types.ObjectId,
+				ref: 'DeviceInfo'
+			}
+		]
 	},
 	{
 		timestamps: true
