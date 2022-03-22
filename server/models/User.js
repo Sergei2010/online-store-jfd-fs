@@ -9,7 +9,7 @@ const schema = new Schema(
 		role: String
 	},
 	{
-		timestamps: true
+		timestamps: { createdAt: 'created_at' }
 	}
 )
 
