@@ -15,16 +15,10 @@ module.exports = async () => {
 	if (types.length !== typeMock.length) {
 		await createInitialEntity(Type, typeMock)
 	}
-}
-
-module.exports = async () => {
 	const brands = await Brand.find()
 	if (brands.length !== brandMock.length) {
 		await createInitialEntity(Brand, brandMock)
 	}
-}
-
-module.exports = async () => {
 	const devices = await Device.find()
 	if (devices.length !== deviceMock.length) {
 		await createInitialEntity(Device, deviceMock)
