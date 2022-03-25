@@ -29,7 +29,7 @@ const Shop = observer(() => {
 		fetchDevices(null, null, 1, device.limit, device.sort).then((data) => {
 			// console.log('data--after--fetch: ', toJS(data))
 			device.setDevices(data.rows)
-			device.setTotalCount(data.count) // сколько товаров получили, поле "count" от сервера
+			device.setTotalCount(data.count)  // сколько товаров получили, поле "count" от сервера
 		})
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
@@ -69,13 +69,13 @@ const Shop = observer(() => {
 	return (
 		<Container>
 			<div className='mt-4 mb-4'>
-				<h2 className='title'>Привет, {userName}</h2>
+				<h2 className='title'>Привет, { userName }</h2>
 			</div>
 			<Row className='mt-2'>
-				<Col md={3}>
+				<Col md={ 3 }>
 					<TypeBar />
 				</Col>
-				<Col md={9}>
+				<Col md={ 9 }>
 					<BrandBar />
 					<DeviceList />
 					<Pages />
