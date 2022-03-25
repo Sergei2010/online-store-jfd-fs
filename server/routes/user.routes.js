@@ -7,7 +7,7 @@ const router = express.Router({ mergeParams: true })
 router.patch('/:userId', auth, async (req, res) => {
 	try {
 		const { userId } = req.params
-
+		// userId === current user id ?
 		// флаг 'new' для получения с сервера уже обновлённых данных
 		if (userId === req.user._id) {
 			const updatedUser = await User.findByIdAndUpdate(userId, req.body, { new: true })

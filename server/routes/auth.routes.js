@@ -24,11 +24,16 @@ router.post('/signUp', [
 			if (!errors.isEmpty()) {
 				return res
 					.status(400)
-					.json({ error: { message: 'INVALID_DATA', code: 400 /* errors: errors.array() */ } })
+					.json({
+						error: {
+							message: 'INVALID_DATA', code: 400,
+							errors: errors.array()
+						}
+					})
 			}
-			const { email, password } = req.body
+			const { email, password } = req.body  // 1.
 
-			const existingUser = await User.findOne({ email })
+			const existingUser = await User.findOne({ email })  // 2.
 			if (existingUser) {
 				return res.status(400).json({
 					error: {
@@ -38,7 +43,8 @@ router.post('/signUp', [
 				})
 			}
 
-			const hashedPassword = await bcrypt.hash(password, 12)
+			// npm i bcrypt jsonwebtoken express-validator
+			const hashedPassword = await bcrypt.hash(password, 12)  // 3.
 
 			const newUser = await User.create({
 				...generateUserData(),
@@ -59,35 +65,41 @@ router.post('/signUp', [
 ])
 
 // 1.validate
-// 2. find user
-// 3. compare hashed password
-// 4. generate token
-// 5. return data
+// 2. get data from req (email, password, ...)
+// 3. find user
+// 4. compare hashed password
+// 5. generate token
+// 6. return data
 router.post('/signInWithPassword', [
 	check('email', 'Email некорректный').normalizeEmail().isEmail(),
 	check('password', 'Пароль не может быть пустым').exists(),
 	async (req, res) => {
 		try {
-			const errors = validationResult(req)
+			const errors = validationResult(req)  // 1.
 			if (!errors.isEmpty()) {
-				return res.status(400).json({ error: { message: 'INVALID_DATA', code: 400 } })
+				return res.status(400).json({
+					error: {
+						message: 'INVALID_DATA',
+						code: 400
+					}
+				})
 			}
 
-			const { email, password } = req.body
-			const existingUser = await User.findOne({ email })
+			const { email, password } = req.body  // 2.
+			const existingUser = await User.findOne({ email })  // 3.
 			if (!existingUser) {
 				return res.status(400).send({ error: { message: 'EMAIL_NOT_FOUND', code: 400 } })
 			}
 
-			const isPasswordEqual = await bcrypt.compare(password, existingUser.password)
+			const isPasswordEqual = await bcrypt.compare(password, existingUser.password)  // 4.
 			if (!isPasswordEqual) {
 				return res.status(400).send({ error: { message: 'INVALID_PASSWORD', code: 400 } })
 			}
 
-			const tokens = tokenService.generate({ _id: existingUser._id })
+			const tokens = tokenService.generate({ _id: existingUser._id })  // 5.
 			await tokenService.save(existingUser._id, tokens.refreshToken)
 
-			res.status(200).send({ ...tokens, userId: existingUser._id })
+			res.status(200).send({ ...tokens, userId: existingUser._id })  // 6.
 		} catch (e) {
 			res.status(500).json({
 				message: 'На сервере произошла ошибка. Попробуйте позже!!'

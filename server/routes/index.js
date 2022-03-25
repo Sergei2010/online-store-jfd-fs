@@ -8,5 +8,4 @@ router.use('/type', require('./type.routes'))
 router.use('/basket', require('./basket.routes'))
 router.use('/device', require('./device.routes'))
 
-
 module.exports = router
