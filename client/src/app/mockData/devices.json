@@ -1,0 +1,226 @@
+[
+	{
+		"_id": "67rdca3eeb7f6fgeed471001",
+		"name": "ARTCOOL Gallary",
+		"price": 89900,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed1002",
+		"name": "LG Wind",
+		"price": 34000,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed4711003",
+		"name": "LG Glide",
+		"price": 5600,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471004",
+		"name": "Tefal Next",
+		"price": 6400,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471005",
+		"name": "Fresh Air",
+		"price": 45000,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471006",
+		"name": "Breeze",
+		"price": 53200,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471007",
+		"name": "Macbook pro",
+		"price": 124000,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471008",
+		"name": "Aser Pridator Treton 900",
+		"price": 78900,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471009",
+		"name": "Samsung UHD 4K Smart TV AU7560 Series 7",
+		"price": 52990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471010",
+		"name": "Samsung Crystal UHD 4K Smart TV AU9000 Series 9",
+		"price": 89990,
+		"rating": "",
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471011",
+		"name": "Hansa ZWM 536 SH",
+		"price": 20999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471012",
+		"name": "Kraft KF-FDM456D1002W",
+		"price": 22999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471013",
+		"name": "Haier AR09AQHQDURNER",
+		"price": 19199,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471014",
+		"name": "Haier AS25S2SF1FA-W / 1U25S2SM1FA",
+		"price": 47999,
+		"rating": "",
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471015",
+		"name": "Electrolux EACM-18 HP/N3",
+		"price": 58990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471016",
+		"name": "Kraft BC(W)-75",
+		"price": 10999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471017",
+		"name": "GA-B459CQCL",
+		"price": 30999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471018",
+		"name": "iPhone 13 128GB Midnight ",
+		"price": 74990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471019",
+		"name": "iPhone 11 128GB Black ",
+		"price": 52799,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471020",
+		"name": "iPhone 13 128GB Pink ",
+		"price": 74990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471021",
+		"name": "iPhone 12 128GB Blue ",
+		"price": 64990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471022",
+		"name": "iPhone 12 Pro 256GB Pacific ",
+		"price": 98999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471023",
+		"name": "Galaxy Z Flip3 5G 8/128GB",
+		"price": 79990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471024",
+		"name": "Galaxy Z Fold3 5G 12/256GB",
+		"price": 144990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471025",
+		"name": "Galaxy Z Fold3 5G 12/256GB",
+		"price": 144990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471026",
+		"name": "Galaxy S21 5G 8/256GB",
+		"price": 54990,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471027",
+		"name": "Tefal Ultragliss Anti-Calc Plus FV6832E0",
+		"price": 5999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471028",
+		"name": "Tefal EXPRESS STEAM FV2836E0",
+		"price": 27999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471029",
+		"name": "Tefal Ultragliss Anti-Calc Plus FV6840E0",
+		"price": 6999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471030",
+		"name": "Tefal Ultimate Pure FV9848E0",
+		"price": 9999,
+		"rating": 0,
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed471031",
+		"name": "Lenovo V17 IIL 82GX0084RU",
+		"price": 64990,
+		"rating": "",
+		"image": ""
+	},
+	{
+		"_id": "67rdca3eeb7f6fgeed4711032",
+		"name": "Lenovo V14-IIL 82C400S5RU",
+		"price": 54990,
+		"rating": 0,
+		"image": ""
+	}
+]

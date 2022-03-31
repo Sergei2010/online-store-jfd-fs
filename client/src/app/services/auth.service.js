@@ -2,6 +2,7 @@ import axios from "axios";
 import localStorageService from "./localStorage.service";
 import config from "../config.json";
 
+// создаю экземпляр axios
 const httpAuth = axios.create({
     baseURL: config.apiEndpoint + "/auth/",
     params: {

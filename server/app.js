@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const config = require('config')
 const chalk = require('chalk')
 const cors = require('cors')
-const { started } = require('npm')
+// const { started } = require('npm')
 const initDatabase = require('./startUp/initDatabase')
 const routes = require('./routes')
 
