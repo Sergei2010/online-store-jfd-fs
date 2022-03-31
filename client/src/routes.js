@@ -1,4 +1,4 @@
-import Admin from './pages/Admin'
+import Admin from "./app/pages/Admin";
 import {
 	ADMIN_ROUTE,
 	BASKET_ROUTE,
@@ -6,11 +6,11 @@ import {
 	LOGIN_ROUTE,
 	REGISTRATION_ROUTE,
 	SHOP_ROUTE
-} from './utils/consts'
-import Basket from './pages/Basket'
-import Shop from './pages/Shop'
-import Auth from './pages/Auth'
-import DevicePage from './pages/DevicePage'
+} from "./app/utils/consts";
+import Basket from "./app/pages/Basket";
+import Shop from "./app/pages/Shop";
+import DevicePage from "./app/pages/DevicePage";
+import Login from "./app/layouts/login";
 
 export const authRoutes = [
 	{
@@ -21,7 +21,7 @@ export const authRoutes = [
 		path: BASKET_ROUTE,
 		Component: Basket
 	}
-]
+];
 
 export const publicRoutes = [
 	{
@@ -30,14 +30,14 @@ export const publicRoutes = [
 	},
 	{
 		path: LOGIN_ROUTE,
-		Component: Auth
+		Component: Login
 	},
 	{
 		path: REGISTRATION_ROUTE,
-		Component: Auth
+		Component: Login
 	},
 	{
-		path: DEVICE_ROUTE + '/:id',
+		path: DEVICE_ROUTE + "/:id",
 		Component: DevicePage
 	}
-]
+];
